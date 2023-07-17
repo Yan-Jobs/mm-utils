@@ -3,7 +3,7 @@ plugins {
     id("com.github.weave-mc.weave-gradle") version "649dba7468"
 }
 
-group = "com.example"
+group = "me.yanjobs.mmutils"
 version = "1.0"
 
 minecraft.version("1.8.9")
@@ -20,5 +20,5 @@ dependencies {
 }
 
 tasks.compileJava {
-    options.release.set(11)
+    options.release.set(17)
 }
