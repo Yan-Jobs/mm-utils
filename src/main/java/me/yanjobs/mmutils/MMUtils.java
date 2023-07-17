@@ -1,5 +1,6 @@
 package me.yanjobs.mmutils;
 
+import me.yanjobs.mmutils.command.Info;
 import me.yanjobs.mmutils.command.MMToggle;
 import me.yanjobs.mmutils.events.ChatReceived;
 import me.yanjobs.mmutils.events.MurdererFinder;
@@ -19,6 +20,7 @@ public class MMUtils implements ModInitializer {
         EventBus.subscribe(new MurdererFinder());
         EventBus.subscribe(new ChatReceived());
         CommandBus.register(new MMToggle());
+        CommandBus.register(new Info());
         try {
             config = new Config();
             config.createConfigFile();
